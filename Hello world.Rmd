@@ -1,0 +1,55 @@
+---
+title: "Hello World"
+author: "Juan Carlos Rubio Polania"
+date: "2024-03-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This code essentially iterates (repeat) over the numbers 1 to 7. For each number less than 7, it prints (show in the console) the content of Text1, and for the number 7, it prints the content of Text2. The output will be the repeated printing of Text1 followed by the printing of Text2.
+
+Sure, let's break down the code step by step:
+
+* X = seq(1:7): This line creates a sequence of numbers from 1 to 7 and assigns it to the variable X.
+
+* Text1 = "I enjoy riding my bike, pray, walk with Milo, programming, and the science": This line defines a string containing a sentence and assigns it to the variable Text1.
+
+* Text2 = "Only see the sea": This line defines another string containing a sentence and assigns it to the variable Text2.
+
+* for (i in seq_along(X)) {: This line starts a for loop that iterates over each element in the sequence X. The seq_along() function generates a sequence of the same length as X, which is then used to iterate over each element.
+
+* if (i < 7) {: This line checks if the current value of i is less than 7. If true, it executes the code block inside the curly braces {}.
+
+* print(Text1): Inside the if statement, this line prints the content of Text1 to the console.
+
+* } else {: This line starts the else block, which will be executed if the condition in the if statement is false.
+
+* print(Text2): Inside the else block, this line prints the content of Text2 to the console.
+
+* }: This curly brace closes both the if and else blocks.
+
+* }: This curly brace closes the for loop.
+
+So, the code essentially iterates over the numbers 1 to 7. For each number less than 7, it prints the content of Text1, and for the number 7, it prints the content of Text2. The output will be the repeated printing of Text1 followed by the printing of Text2.
+
+
+```{r}
+X = seq(1:7);
+
+Text1 ="I enjoy riding my bike, pray, walk with Milo, programming, and the science";
+
+Text2 = "Only see the sea";
+
+for (i in seq_along(X)){ # Contition for all element in the range between 1 to 7  
+  if (i <7){             # Condition to select only numbers lower than 7          
+    print(Text1)         # Iterated element                                       
+  } else {               # Condition to change the element iterated               
+    print(Text2)         # New iterated element                                   
+  } 
+}
+
+```
+
