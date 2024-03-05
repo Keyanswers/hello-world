@@ -1,13 +1,3 @@
-# My hello world
+My version of Hello World
 
-X = seq(1:7);
-Text1 ="I enjoy riding my bike, pray, and the science";
-Text2 = "Only see the sea";
-
-for (i in seq_along(X)){ # Contition for all element in the range between 1 to 7  
-  if (i <7){             # Condition to select only numbers lower than 7          
-    print(Text1)         # Iterated element                                       
-  } else {               # Condition to change the element iterated               
-    print(Text2)         # New iterated element                                   
-  } 
-}
+This R code creates a sequence X ranging from 1 to 7 and defines two text strings Text1 and Text2. It then uses a for loop to iterate over the elements of the sequence. Inside the loop, it checks if the current element i is less than 7. If true, it prints the content of Text1; otherwise, it prints the content of Text2. The loop essentially prints the content of Text1 for the first six iterations (when i is less than 7) and then prints the content of Text2 for the seventh iteration.
